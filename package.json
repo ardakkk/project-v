@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/customer",
+    "packages/modules/customer-modules/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "test": "lerna run test",
+    "diff": "lerna diff"
+  },
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}
