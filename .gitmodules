@@ -1,0 +1,3 @@
+[submodule "packages/client"]
+	path = packages/client
+	url = git@git@github.com:ardakkk/project-v-client.git

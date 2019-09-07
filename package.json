@@ -2,13 +2,14 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/customer",
-    "packages/modules/customer-modules/*"
+    "packages/client"
   ],
   "scripts": {
+    "start-client": "lerna run start",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "test": "lerna run test",
-    "diff": "lerna diff"
+    "diff": "lerna diff",
+    "clean": "lerna clean"
   },
   "devDependencies": {
     "lerna": "^3.16.4"
