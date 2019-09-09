@@ -1,0 +1,12 @@
+{
+	"editor.formatOnSave": true,
+	"javascript.format.enable": false,
+	// Enable sorting of path on the default group
+	"importSorter.sortConfiguration.customOrderingRules.disableDefaultOrderSort": true,
+	// Enables sort before each save of the document
+	"importSorter.generalConfiguration.sortOnBeforeSave": true,
+	// If true then the import string has a semicolon at the end, otherwise it will not be appended. Default is true
+	"importSorter.importStringConfiguration.hasSemicolon": true,
+	// Number of spaces before }
+	"importSorter.importStringConfiguration.spacingPerImportExpression.beforeEndingBracket": 1
+}
