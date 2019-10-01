@@ -8,5 +8,24 @@
 	// If true then the import string has a semicolon at the end, otherwise it will not be appended. Default is true
 	"importSorter.importStringConfiguration.hasSemicolon": true,
 	// Number of spaces before }
-	"importSorter.importStringConfiguration.spacingPerImportExpression.beforeEndingBracket": 1
+	"importSorter.importStringConfiguration.spacingPerImportExpression.beforeEndingBracket": 1,
+	// The default order level of everything which is not included into rules
+	"importSorter.sortConfiguration.customOrderingRules.rules": [
+		{
+			"regex": "^[@]",
+			"orderLevel": 30
+		},
+		{
+			"regex": "^[.]",
+			"orderLevel": 40
+		},
+		{
+			"type": "importMember",
+			"regex": "^$",
+			"orderLevel": 50,
+			"disableSort": true
+		}
+	],
+	// Combine imports with the same paths
+	"importSorter.sortConfiguration.joinImportPaths": true
 }
