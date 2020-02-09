@@ -1,17 +1,19 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": [
-    "packages/client"
-  ],
-  "scripts": {
-    "start-client": "lerna run start",
-    "bootstrap": "lerna bootstrap --use-workspaces",
-    "test": "lerna run test",
-    "diff": "lerna diff",
-    "clean": "lerna clean"
-  },
-  "devDependencies": {
-    "lerna": "^3.16.4"
-  }
+	"name": "root",
+	"private": true,
+	"workspaces": [
+		"packages/client"
+	],
+	"scripts": {
+		"start-client": "lerna run start",
+		"bootstrap": "lerna bootstrap --use-workspaces",
+		"update:version": "lerna version --conventional-commits --yes",
+		"publish:all": "lerna publish from-package --registry http://localhost:4873",
+		"test": "lerna run test",
+		"diff": "lerna diff",
+		"clean": "lerna clean"
+	},
+	"devDependencies": {
+		"lerna": "^3.16.4"
+	}
 }
